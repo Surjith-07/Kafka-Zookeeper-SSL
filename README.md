@@ -63,3 +63,12 @@ kafka-topics.sh --zookeeper localhost:2181 --describe --topic my-topic
 `
 kafka-topics.sh --bootstrap-server localhost:9092,localhost:9093,localhost:9094 --describe --topic my-topic
 `
+### To Create Producer
+`
+kafka-console-producer.sh --broker-list localhost:9092,localhost:9093 --topic ssl-topic --producer.config producer.properties
+`
+
+###To Create Consumer
+`
+kafka-console-consumer.sh --bootstrap-server localhost:9092,localhost:9093 --topic ssl-topic --from-beginning --consumer.config consumer.properties
+`
