@@ -68,7 +68,7 @@ kafka-topics.sh --bootstrap-server localhost:9092,localhost:9093,localhost:9094 
 kafka-console-producer.sh --broker-list localhost:9092,localhost:9093 --topic ssl-topic --producer.config producer.properties
 `
 
-###To Create Consumer
+### To Create Consumer
 `
 kafka-console-consumer.sh --bootstrap-server localhost:9092,localhost:9093 --topic ssl-topic --from-beginning --consumer.config consumer.properties
 `
